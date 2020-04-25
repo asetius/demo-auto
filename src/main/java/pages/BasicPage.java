@@ -18,4 +18,11 @@ public class BasicPage {
   public void contentIsVisible(String text) {
     $(By.xpath("//*[text()='" + text + "']")).shouldBe(Condition.visible);
   }
+
+  public Boolean checkTextExist(String text) {
+    if ($(By.xpath("//*[text()='" + text + "']")).exists()) {
+      return true;
+    } else
+      return false;
+  }
 }

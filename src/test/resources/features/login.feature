@@ -1,8 +1,8 @@
 Feature: Login User
 
-  Scenario: Login user
-    Then Click "Log In" button
-    Then Input login
-    Then Input password
-    Then Click "Log in" button span
-    Then Content with "Become an Author" visible
+  Scenario: Create user
+    Then Open "sign-up" page
+    Then Click "Become a Learner" button
+    Then Input email
+
+

@@ -7,10 +7,8 @@ import pages.SignInPage;
 public class SignInPageDef {
   SignInPage signInPage = new SignInPage();
 
-
-
-  @Then("Input login")
-  public void inputLogin() {
+  @Then("Input email")
+  public void inputEmail() {
     signInPage.inputLogin(UserConfig.USER_LOGIN);
   }
 
